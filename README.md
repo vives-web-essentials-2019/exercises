@@ -1,5 +1,7 @@
 # Web Essentials: Exercises and Assignments
 
+![image](../../workflows/Linter/badge.svg)
+
 **Name**: <!-- TODO: fill in your full name here, firstname and lastname -->
 
 **URL**: <!-- TODO: paste the full netlify URL to the solution of this exercise  -->
