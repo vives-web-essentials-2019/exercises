@@ -12,9 +12,10 @@ This repository contains the exercises and assignments that accompany the Web Es
 
 In order to *[get started](./docs/get-started.md)*, *[commit changes](./docs/commit-changes.md)* and *[pulling changes](./docs/pull-changes.md)* you need to follow the instructions that are described in the documentation:
 
-* [get started](./docs/get-started.md)
-* [commit changes](./docs/commit-changes.md)
-* [pulling changes](./docs/pull-changes.md)
+* [Required software](./docs/software.md)
+* [Get started](./docs/get-started.md)
+* [Commit changes](./docs/commit-changes.md)
+* [Pulling changes](./docs/pull-changes.md)
 
 ## Challenges
 

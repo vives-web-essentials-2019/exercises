@@ -5,7 +5,9 @@ Ok. Lets create our very first HTML document and get everything up and running.
 
 ## minimal Hello World document
 
-First we need to create an `index.html` document inside this projects directory. You can do this by right-clicking the directory in the explorer window.
+First we need to create an `index.html` document inside this projects directory (`hello-world`). You can do this by right-clicking the directory in the explorer window and open click on `Open with Code`.
+
+Visual Studio Code will now open up and set the `hello-world` directory as the projects context. This means that all commands and actions are applied in function of this directory. Create and save a new file called `index.html`
 
 In this document we need to place the following code:
 
@@ -76,21 +78,19 @@ So we told the browser to make a **request** to localhost. Instead we got an err
 
 ## Starting the HTTP server
 
-Earlier we installed the PHP programming language. PHP has a small built-in HTTP server embedded inside. Lets use it.
+Earlier we installed the Serve HTTP server. Let's start it up so that it can respond to our HTTP requests and serve up the requested documents.
 
 In Visual Studio Code, press the `control + ù` key. It will open up a console or terminal for us. It will load up an embedded version of Powershell where we can execute commands.
 
 Lets type the following:
 
 ```powershell
-php -S localhost:80
+serve
 ```
 
-Make sure to use the uppercase `-S` or the command will not work.
+This command will start a *server*  in the current directory that listens to localhost on port `5000`. Don't panic if you don't understand all of this. This will get clear following this course. For now just remember to type this command to start a server.
 
-This command will tel PHP to start a *server* (`-S`) that listens to localhost on port `80`. Don't panic if you don't understand all of this. This will get clear following this course. For now just remember to type this command to start a server.
-
-Any other port can be used (1024 and up). For example, when developing port `3000` or port `8080` can be used as well.
+Any other port can be used (1024 and up). For example, when developing port `3000` or port `8080` can be used as well. This can be done by supplying the `-l` option. `serve -l 3000` will start a HTTP server that _listens_ on port `3000` instead of `5000`.
 
 ### HINT: Localhost
 
@@ -104,7 +104,7 @@ Any other port can be used (1024 and up). For example, when developing port `300
 
 > Another way of telling your browser to use the local machine is by using the ip address `127.0.0.1`. `127.0.0.1` and `localhost` are synonyms so you can choose what ever you are happy with. The result is exactly the same.
 
-Ok, now that our HTTP server is up and running lets reload the webpage in Chrome by pressing the `F5` key.
+Ok, now that our HTTP server is up and running lets reload the webpage in Chrome or FireFox by pressing the `F5` key.
 
 ## 404 object not found
 
@@ -114,13 +114,17 @@ Ok, this is still not our webpage.
 
 What went wrong this time?
 
-Well we asked our browser to get the HTML document inside the root directory of `oefeningen`. This is where we executed the PHP command.
+Well we asked our browser to get the HTML document inside the root directory of `web-essentials-practical-name`. This is where we executed the `serve` command.
 
 There are no HTML files inside that directory to show.
 
-Ok, lets take the `exercise-01` directory then. This directory - if you saved your file correctly - should contain and file called `index.html`.
+Ok, lets take it to the `01-hello-world/hello-world` directory then. This directory - if you saved your file correctly - should contain and file called `index.html`.
 
-So lets got back to our browser and ask for the following page: [http://localhost/exercise-01/index.html](http://localhost/exercise-01/index.html)
+So lets got back to our browser and ask for the following page: [http://localhost](http://localhost)
+
+### HINT: index.html is the default
+
+> If a file is called `index.html` then it will be the default document that is responded by the HTTP server. [http://localhost](http://localhost) and [http://localhost/index.html](http://localhost/index.html) are essentially the same. In essence, if you forget to provide a document name (.html file), then the HTTP server will check if there is an file called `index.html` available. If there is, then it will respond with that document. This means that you never need to add the `index.html` part at the end of the URL.
 
 What do we get now?
 

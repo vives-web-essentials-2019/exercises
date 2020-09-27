@@ -1,24 +1,24 @@
 # Pulling changes
 
-<!-- ```shell
-git pull git@github.com:vives-web-essentials-2019/exercises.git master
-``` -->
+The teacher will update the projects regularly. Those changes and updates are not automatically pushed into your personal projects. This ensures that nothing gets broken or corrupted in your projects without you knowing it. You have total control over what and when updates are applied. This also means that you are also responsible for these new updates. To import the updates into your personal project, use the instructions below.
+
+The teacher will notify you when updates are available and when you should pull these updates into your projects.
 
 ## Setup
 
 To pull the latest updates you will first need to add the original repo on which this one was based. This only needs to be done once for every cloned instance:
 
 ```shell
-git remote add base git@github.com:vives-web-essentials-2019/exercises.git
+git remote add base git@github.com:vives-web-essentials-2020/exercises.git
 ```
 
 `base` is the name of remote repo. Now you should see two remotes when issuing the command `git remote -v`. For example:
 
 ```text
-base     git@github.com:vives-web-essentials-2019/exercises.git (fetch)
-base     git@github.com:vives-web-essentials-2019/exercises.git (push)
-origin  git@github.com:vives-introduction-to-programming-2019/web-essentials-practical-sillevl.git (fetch)
-origin  git@github.com:vives-introduction-to-programming-2019/web-essentials-practical-sillevl.git (push)
+base     git@github.com:vives-web-essentials-2020/exercises.git (fetch)
+base     git@github.com:vives-web-essentials-2020/exercises.git (push)
+origin  git@github.com:vives-introduction-to-programming-2020/web-essentials-practical-sillevl.git (fetch)
+origin  git@github.com:vives-introduction-to-programming-2020/web-essentials-practical-sillevl.git (push)
 ```
 
 ## Instructions

@@ -19,5 +19,3 @@ Traverse to your local `web-essentials-practical-<username>` directory and type 
 You can also navigate to your GitHub page of this repo and check if all went well.
 
 Make it a habit of committing regularly. At least after solving each assignment.
-
-<!-- Also checkout the [shortened version of these steps for everyday use](./short_instructions.md). -->

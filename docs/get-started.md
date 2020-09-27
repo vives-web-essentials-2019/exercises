@@ -6,7 +6,7 @@ To get started you will first need to get a copy of this repository. Follow the 
 1. Accept the assignment
 1. Wait for your own personal copy to be created (can take up to several minutes)
 1. Open the GitHub page of your repository
-1. Copy the ssh clone-url (green button) that looks like `git@github.com:vives-web-essentials-2019/web-essentials_practical-<username>.git`
+1. Copy the ssh clone-url (green button) that looks like `git@github.com:vives-web-essentials-2020/web-essentials_practical-<username>.git`
 1. Traverse to a local directory on your system where you wish to clone the repo using Windows Explorer. Open `PowerShell` in that location by typing powershell in the location bar as shown in the screenshot below.
 
 _Please don't choose a destination directory that is nested very deeply. The structure of this repo introduces quite a lot of subdirectories and might give problems towards maximum path length in Windows._
@@ -33,3 +33,20 @@ Resolving deltas: 100% (57/57), done.
 Now you should have your local copy of the repository.
 
 All git commands in other sections should always be executed inside of the project dir called `web-essentials-practical-<username>`.
+
+## Install dependencies
+
+In order to get some extra tools working you need to install them. Just run the following command inside the project directory:
+
+```shell
+npm install
+```
+
+This will install some 'linter' tools. These tools will check if your documents are structured correctly. The following linter are available:
+
+* Markdown: `npm run lint-markdown`
+* HTML: `npm run lint-html`
+* CSS: `npm run lint-css`
+* JavaScript: `npm run lint-js`
+
+These linters will be ran every time you upload code to GitHub as well. This will give you feedback if any problems should be detected in your documents. Please make sure to keep your documents will structured and formatted. If errors or warnings occur in documents, a descriptive message will be displayed giving more details about the error. Most of the time you get enough information to solve the problems. If you are unable to solve the problems, just contact the teacher.
