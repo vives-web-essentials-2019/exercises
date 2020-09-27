@@ -3,7 +3,8 @@
     "lint-html": "htmlhint --warn",
     "lint-css": "stylelint **/*.css",
     "lint-js": "eslint \"**/*.js\"",
-    "all": "npm run html && npm run css && npm run js && exit 0"
+    "lint-markdown": "markdownlint **/*.md",
+    "all": "npm run lint-html && npm run lint-css && npm run lint-js && npm run lint-markdown && exit 0"
   },
   "dependencies": {
     "eslint": "^6.7.2",
@@ -13,6 +14,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "htmlhint": "^0.11.0",
+    "husky": "^4.3.0",
+    "markdownlint-cli": "^0.23.2",
     "stylelint": "^12.0.0",
     "stylelint-config-standard": "^19.0.0"
   },
@@ -24,5 +27,10 @@
         "excludedFiles": "node_modules/"
       }
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-markdown"
+    }
   }
 }
